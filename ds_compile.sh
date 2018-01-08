@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+cc ds_time_project.c
+=======
 cc main.c updatetime.c insert_inbox_msg.c getnode.c insert_msg_sentbox.c delete_msg_sentbox.c delete_inbox_msg.c display_inbox.c display.c sentbox_email_search.c  inbox_email_search.c  inbox_search_id.c  sentbox_search_id.c  login.c  get.c
 
  
+>>>>>>> 76978fe94341fcd8f83ba1c2e22c1a6baa9ad034
 ./a.out
 scp accoun001.txt dell@192.168.43.112:Desktop/
 scp accoun002.txt dell@192.168.43.112:Desktop/
@@ -9,7 +13,11 @@ scp accoun004.txt dell@192.168.43.112:Desktop/
 scp accoun005.txt dell@192.168.43.112:Desktop/
 scp accoun006.txt dell@192.168.43.112:Desktop/
 scp accoun007.txt dell@192.168.43.112:Desktop/
+<<<<<<< HEAD
+scp accoun008.txt dell@192.168.43.112:Desktop/
+=======
 scp accoun008.txt dell@192.168.43.112:Desktop/ 
+>>>>>>> 76978fe94341fcd8f83ba1c2e22c1a6baa9ad034
 scp accoun009.txt dell@192.168.43.112:Desktop/
 scp accoun010.txt dell@192.168.43.112:Desktop/
 scp accoun011.txt dell@192.168.43.112:Desktop/
