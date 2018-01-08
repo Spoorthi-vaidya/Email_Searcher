@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<ctype.h>
+#include<time.h>
+#define max 500
+#include "email.h"
+
+sentbox* delete_msg_sentbox(sentbox *head,int n)
+{
+			sentbox *temp,*i;
+			int N=0;
+			int ch;
+
+			for(i=head,N=1;N<n-1;i=i->rlink,N++);
+			temp=i->rlink;
+			temp->rlink->llink=i;
+			i->rlink=temp->rlink;
+
+			printf("Deleted email from sentbox is the email from EmailID : %s\n\n",temp->data.receiverID);
+			printf("ENTER THE CHOICE\n\n1)See the content of Email\n2)exit\n");
+			scanf("%d",&ch);
+			switch(ch)
+			{
+				case 1: printf("the content of Email is :\n");
+					puts(temp->data.subject);
+					printf("\n");
+					printf("time:-\t %d:%d:%d\n",temp->data.hr,temp->data.min,temp->data.sec);
+					puts(temp->data.email);
+					printf("\n");
+					
+					
+					free(temp);
+					break;
+	
+
+				case 2: break;
+
+			}
+
+		        return head;
+	
+
+}
+
